@@ -17,5 +17,19 @@ I am going to be using tmux to have multiplexed terminals, but have to have a so
 that does development will know that most of the people, specially your architects, aka: old timers use vim and only vim. Ofcourse there is the
 odd emacs psychopath, but lets not judge.
 
-- AvS March 3, 2016 @ 02h18
+- AvS : March 3, 2016 @ 02h18
+
+## Things to keep in mind
+
+Since I am using [spf13] (http://vim.spf13.com/) as a base, some of my content may not be completely compatible with just dumping it into a ~/.vimrc file,
+it should not be that different, but just something to think about.
+
+Most of my changes will be in ~/.vimrc.local :-> This file should be added in the commit that added "Things to keep in mind".
+
+### spf13 bootstrap
+
+I will additionally add a bootstrap.sh script that will stage all the files to your local home directly. I would recomment to
+also use [spf13], (http://vim.spf13.com/) so will add a command line option to install that for you.
+
+- AvS : March 3, 2016 @ 02h35
 

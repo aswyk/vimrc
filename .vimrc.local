@@ -1,0 +1,3 @@
+set nospell
+colorscheme ecostation
+set guifont=Menlo:h18
