@@ -33,3 +33,6 @@ also use [spf13], (http://vim.spf13.com/) so will add a command line option to i
 
 - AvS : March 3, 2016 @ 02h35
 
+### README tracking
+
+In the sub directory history, there is a README.md, where I will keep track of changes made. This may not be 100% accurate, but will be good enough.

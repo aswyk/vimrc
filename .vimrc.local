@@ -1,3 +1,16 @@
-set nospell
-colorscheme ecostation
+" Andre Schalkwyks vimrc file
+
+
+" Color Scheme -> This could change a lot so I keep it near the top.
+colorscheme dracula
+" When editing the readme, ecostation is better
+
+" Font Size
 set guifont=Menlo:h18
+
+" Keep spell check off. Doing this because keeping it on becomes a distraction 
+set nospell
+
+" If vim is resized, we want our windows to be resized nicly.
+" Not sure if the \<c-w>= is going to work since this is taken straight from Steve Losh's youtube video
+au VimResized * exe "normal! \<c-w>="
