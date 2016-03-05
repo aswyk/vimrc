@@ -1,16 +1,33 @@
-" Andre Schalkwyks vimrc file
+" Need to take a look at vim airline
+" https://github.com/vim-airline/vim-airlin
 
+" Keys for splitting windows
+nnoremap <C-\> :vsplit<enter>
+nnoremap <C-_> :split<enter>
+" Split remaps where you dont have to press teh ekus
+"    nnoremap ,v :split<enter>
+"    nnoremap ,h :vsplit<enter>e
 
-" Color Scheme -> This could change a lot so I keep it near the top.
-colorscheme dracula
-" When editing the readme, ecostation is better
+" Keys for moving around in vim splits
+nnoremap <C-Right> <C-w>l
+nnoremap <C-Left> <C-w>h
+nnoremap <C-Up> <C-w>k
+nnoremap <C-Down> <C-w>j
 
-" Font Size
-set guifont=Menlo:h18
+" Save key -> Ctrl+S
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc>:w<CR>l
+vnoremap <c-s> <Esc>:w<CR>
 
-" Keep spell check off. Doing this because keeping it on becomes a distraction 
+nnoremap <C-x> :x<CR>
+inoremap <C-x> <Esc>:x<CR>l
+vnoremap <C-x> <Esc>:x<C-Right>
+
+set t_Co=256
+
 set nospell
-
-" If vim is resized, we want our windows to be resized nicly.
-" Not sure if the \<c-w>= is going to work since this is taken straight from Steve Losh's youtube video
-au VimResized * exe "normal! \<c-w>="
+" colorscheme ecostation
+" colorscheme dracula
+colorscheme onedark
+set nospell
+set guifont=Menlo:h18
